@@ -23,12 +23,12 @@
 // The single source of truth for anything identifying you. Every other
 // section below derives from these fields instead of repeating them.
 export const ME = {
-  firstName:  'Your',
-  lastName:   'Name',
+  firstName:  'Ryan',
+  lastName:   'Co',
   role:       'Software Engineer', // e.g. "Software Engineer", "Data Scientist"
-  email:      'you@example.com',
-  github:     'yourusername',      // GitHub username only, no URL
-  linkedin:   'yourusername',      // LinkedIn username only, no URL
+  email:      'ryanco@ucla.edu',
+  github:     'chromaly',      // GitHub username only, no URL
+  linkedin:   'ryan-co-3a3333317',      // LinkedIn username only, no URL
   resumePath: '/resume.pdf',       // path under public/ — see README.md
 };
 
@@ -108,7 +108,7 @@ export const EDUCATION: EducationEntry[] = [
     degree:     'B.S. Computer Science',
     minor:      'Statistics',
     gpa:        '3.82',
-    graduation: 'June 2026',
+    graduation: 'June 2030',
     courses: [
       'Data Structures & Algorithms',
       'Operating Systems',
@@ -136,30 +136,30 @@ export interface ExperienceEntry {
 
 export const EXPERIENCE: ExperienceEntry[] = [
   {
-    company:  'Acme Corporation',
-    role:     'Software Engineer Intern',
-    location: 'San Francisco, CA',
-    start:    'Jun 2025',
-    end:      'Aug 2025',
+    company:  'CyberPatriots',
+    role:     'Team Leader',
+    location: 'Granada Hills, CA',
+    start:    'Aug 2024',
+    end:      'May 2026',
     bullets: [
-      'Built a real-time dashboard in React and TypeScript, reducing incident response time by 40%.',
-      'Designed and deployed three REST API endpoints serving 50k requests per day.',
-      'Collaborated with the design team to ship a redesigned onboarding flow that improved conversion by 18%.',
+      'Led 30+ students on a cybersecurity team to 7th nationally through weekly training and competition preparation',
+      'Developed and taught networking/cybersecurity labs covering TCP/IP, VLANs, routing, and ACLs',
+      'Built a Notion-based system to organize training resources and prepare 3 future team leaders',
     ],
-    tech: ['React', 'TypeScript', 'Python', 'PostgreSQL', 'AWS'],
+    tech: ['Linux', 'Cisco Packet Tracer'],
   },
   {
-    company:  'UCLA Engineering',
-    role:     'Teaching Assistant — CS 33',
-    location: 'Los Angeles, CA',
-    start:    'Sep 2024',
-    end:      'Dec 2024',
+    company:  'PROJECT: Creation',
+    role:     'Co-President & Co-Leader',
+    location: 'Granada Hills, CA',
+    start:    'Aug 2024',
+    end:      'May 2026',
     bullets: [
-      'Led weekly discussion sections for 40 students covering systems programming in C.',
-      'Held office hours to assist students with debugging and conceptual questions.',
-      'Wrote and graded three programming assignments and two midterms.',
+      'Co-led weekly web development meetings for 20+ students covering HTML, CSS, JavaScript, Bootstrap, and React',
+      'Designed hands-on lessons and interactive exercises to teach programming and web development concepts',
+      'Grew club from 0 to 20+ active members through recruitment outreach and club fair engagement',
     ],
-    tech: ['C', 'x86 Assembly', 'Linux'],
+    tech: ['JavaScript', 'HTML/CSS', 'Bootstrap', 'React'],
   },
 ];
 
@@ -179,34 +179,27 @@ export interface ProjectEntry {
 
 export const PROJECTS: ProjectEntry[] = [
   {
-    name:        'StudySync',
-    description: 'A collaborative study-planning app that lets UCLA students share notes, schedule group sessions, and track progress together in real time.',
-    tech:        ['Next.js', 'TypeScript', 'Supabase', 'Tailwind CSS'],
-    github:      `${GITHUB_URL}/studysync`,
-    live:        'https://studysync.app',
+    name:        'VoicemailGuard',
+    description: 'iOS Application using a pretrained Artificial Intelligence model that determines if a given voicemail is a scam robocall, helping automate the blocking process.',
+    tech:        ['Python', 'PyTorch', 'Whisper', 'Swift/SwiftUI'],
+    github:      `${GITHUB_URL}/voicemail-spam-classifier`,
     featured:    true,
   },
   {
-    name:        'BruinBot',
-    description: 'A Discord bot that surfaces real-time UCLA dining menu data, library room availability, and bus schedules for 2,000+ active users.',
-    tech:        ['Node.js', 'Discord.js', 'REST APIs', 'Cron'],
-    github:      `${GITHUB_URL}/bruinbot`,
+    name:        'Planner.io',
+    description: 'Colorful and aesthetic online planner that lets you create and organize events, set reminders, and save/organize your daily notes. Comes with an iOS companion for push notifications. Built-In AI Chatbot that can assist in creating, editing, and planning!',
+    tech:        ['React', 'TypeScript', 'Tailwind CSS', 'Firebase', "Swift/SwiftUI"],
+    github:      `${GITHUB_URL}/planner.io`,
+    live:        'https://chromaly.github.io/planner.io/',
     featured:    true,
   },
   {
-    name:        'PocketPortfolio',
-    description: 'A mobile-first stock portfolio tracker with custom alerts and a clean chart-based UI, built during a 24-hour hackathon.',
-    tech:        ['React Native', 'Expo', 'Recharts', 'Firebase'],
-    github:      `${GITHUB_URL}/pocketportfolio`,
-    live:        'https://pocketportfolio.dev',
-    featured:    false,
-  },
-  {
-    name:        'AutoGrade',
-    description: 'A command-line grading tool that runs student Python submissions against test suites in isolated Docker containers and produces structured reports.',
-    tech:        ['Python', 'Docker', 'Bash', 'SQLite'],
-    github:      `${GITHUB_URL}/autograde`,
-    featured:    false,
+    name:        'Quizlet.io',
+    description: 'A Quizlet-style application that allows you to store, manage, and create flashcards that you can study and quiz yourself with. Includes AI capabilities that allow card creations from lecture notes.',
+    tech:        ['React', 'TypeScript', 'Tailwind CSS', 'Firebase AI Logic & App Check'],
+    github:      `${GITHUB_URL}/quizlet.io`,
+    live:        'https://chromaly.github.io/quizlet.io/',
+    featured:    true,
   },
 ];
 
@@ -237,7 +230,7 @@ export const CONTACT = {
 // `columns` renders as link groups. The Resume link here reuses
 // ME.resumePath, so it stays in sync with CONTACT automatically.
 export const FOOTER = {
-  tagline: "UCLA Computer Science student building things for the web.",
+  tagline: "UCLA Computer Science student building projects for university students.",
   columns: [
     {
       heading: 'Portfolio',

@@ -78,21 +78,7 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Right: character illustration */}
-        <div className="hero-character" aria-hidden="true">
-          {/*
-            TODO: Replace this placeholder with your own photo or illustration:
-            <img src="/images/your-photo.png" alt="" className="character-img" />
-
-            Or remove the hero-text and go fully visual like the original.
-          */}
-          <div className="character-figure">
-            <div className="character-placeholder">
-              <span role="img" aria-hidden="true">🧑‍💻</span>
-              <small>Your photo here</small>
-            </div>
-          </div>
-        </div>
+        
       </div>
 
       {/* Cloud transition at the bottom of the hero */}
